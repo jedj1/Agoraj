@@ -56,6 +56,7 @@ fun SettingsAboutPage(viewModel: ChatViewModel, onBack: () -> Unit) {
     val autoUpdateCheck by viewModel.settings.autoUpdateCheck.collectAsState()
     var updateStatus by remember { mutableStateOf<String?>(null) }
     var isChecking by remember { mutableStateOf(false) }
+    var showLicenseDialog by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
 
     val focusManager = LocalFocusManager.current
@@ -88,6 +89,10 @@ fun SettingsAboutPage(viewModel: ChatViewModel, onBack: () -> Unit) {
                 viewModel.emitSnackbar(developerAlreadyEnabledMessage)
             }
         }
+    }
+
+    if (showLicenseDialog) {
+        LicenseDialog(onDismiss = { showLicenseDialog = false })
     }
 
     CollapsingSettingsScaffold(
@@ -259,6 +264,13 @@ fun SettingsAboutPage(viewModel: ChatViewModel, onBack: () -> Unit) {
                         )
                     },
                     modifier = Modifier.clickable { openUrl("https://github.com/newo-ether/Agora/blob/master/PRIVACY.md") }
+                )
+            }, {
+                SettingsItem(
+                    headlineContent = { Text(stringResource(R.string.about_license), modifier = Modifier.padding(vertical = 6.dp)) },
+                    supportingContent = { Text(stringResource(R.string.about_license_desc)) },
+                    leadingContent = { Icon(Icons.Default.Description, contentDescription = null, tint = MaterialTheme.colorScheme.primary) },
+                    modifier = Modifier.clickable { showLicenseDialog = true }
                 )
             }))
 
