@@ -225,20 +225,16 @@ class SettingsManager(private val context: Context) {
     val blurEffectsEnabled: Flow<Boolean> = context.dataStore.data.map { it[BLUR_EFFECTS_ENABLED] ?: true }
     val reduceMotion: Flow<Boolean> = context.dataStore.data.map { it[REDUCE_MOTION] ?: false }
     val stickToBottom: Flow<Boolean> = context.dataStore.data.map { it[STICK_TO_BOTTOM] ?: true }
-    val parseInlineDollarMath: Flow<Boolean> =
-        context.dataStore.data.map { it[PARSE_INLINE_DOLLAR_MATH] ?: false }
+    val parseInlineDollarMath: Flow<Boolean> = context.dataStore.data.map { it[PARSE_INLINE_DOLLAR_MATH] ?: false }
+    val autoWrapCodeBlocks: Flow<Boolean> = context.dataStore.data.map { it[AUTO_WRAP_CODE_BLOCKS] ?: true }
     val hapticsEnabled: Flow<Boolean> = context.dataStore.data.map { it[HAPTICS_ENABLED] ?: true }
-    val detailedTokenUsage: Flow<Boolean> =
-        context.dataStore.data.map { it[DETAILED_TOKEN_USAGE] ?: false }
+    val detailedTokenUsage: Flow<Boolean> = context.dataStore.data.map { it[DETAILED_TOKEN_USAGE] ?: false }
     val toolCallDisplayMode: Flow<String> = context.dataStore.data.map { ToolCallDisplayModes.normalize(it[TOOL_CALL_DISPLAY_MODE]) }
     val thinkingSegmentDisplayMode: Flow<String> = context.dataStore.data.map {
         ThinkingSegmentDisplayModes.normalize(it[THINKING_SEGMENT_DISPLAY_MODE])
     }
-    val autoExpandActiveGroup: Flow<Boolean> =
-        context.dataStore.data.map { it[AUTO_EXPAND_ACTIVE_GROUP] ?: true }
-    val schemeStyle: Flow<String> = context.dataStore.data.map {
-        it[SCHEME_STYLE] ?: DEFAULT_SCHEME_STYLE
-    }
+    val autoExpandActiveGroup: Flow<Boolean> = context.dataStore.data.map { it[AUTO_EXPAND_ACTIVE_GROUP] ?: true }
+    val schemeStyle: Flow<String> = context.dataStore.data.map { it[SCHEME_STYLE] ?: DEFAULT_SCHEME_STYLE }
     val fontPreference: Flow<String> = context.dataStore.data.map { it[FONT_PREFERENCE] ?: "app_default" }
     val customFontPath: Flow<String> = context.dataStore.data.map { it[CUSTOM_FONT_PATH] ?: "" }
     val customFontName: Flow<String> = context.dataStore.data.map { it[CUSTOM_FONT_NAME] ?: "" }
@@ -710,6 +706,9 @@ class SettingsManager(private val context: Context) {
     }
     suspend fun saveParseInlineDollarMath(enabled: Boolean) {
         context.dataStore.edit { it[PARSE_INLINE_DOLLAR_MATH] = enabled }
+    }
+    suspend fun saveAutoWrapCodeBlocks(enabled: Boolean) {
+        context.dataStore.edit { it[AUTO_WRAP_CODE_BLOCKS] = enabled }
     }
     suspend fun saveHapticsEnabled(enabled: Boolean) {
         context.dataStore.edit { it[HAPTICS_ENABLED] = enabled }

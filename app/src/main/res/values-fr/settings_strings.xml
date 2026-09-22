@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">Floute le haut de la liste de discussion sous la barre d’outils. Désactivez cette option pour économiser les performances.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">Réduire les animations</string>
     <string name="reduce_motion_desc">Réduit les mouvements continus et les grands déplacements spatiaux, tout en conservant les fondus, les gestes directs et les retours d’état utiles.</string>
 

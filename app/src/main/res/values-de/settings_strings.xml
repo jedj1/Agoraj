@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">Den oberen Bereich der Chatliste unter der Toolbar weichzeichnen. Zum Sparen von Leistung deaktivieren.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">Bewegung reduzieren</string>
     <string name="reduce_motion_desc">Reduziert kontinuierliche und großflächige räumliche Bewegungen; Überblendungen, direkte Gesten und nützliche Statusrückmeldungen bleiben erhalten.</string>
 

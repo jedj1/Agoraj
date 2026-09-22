@@ -222,9 +222,9 @@ class SettingsRepository(
     val reduceMotion: StateFlow<Boolean> = hot(settingsManager.reduceMotion, false)
     val stickToBottom: StateFlow<Boolean> = hot(settingsManager.stickToBottom, true)
     val parseInlineDollarMath: StateFlow<Boolean> = hot(settingsManager.parseInlineDollarMath, false)
+    val autoWrapCodeBlocks: StateFlow<Boolean> = hot(settingsManager.autoWrapCodeBlocks, true)
     val hapticsEnabled: StateFlow<Boolean> = hot(settingsManager.hapticsEnabled, true)
-    val detailedTokenUsage: StateFlow<Boolean> =
-        hot(settingsManager.detailedTokenUsage, false)
+    val detailedTokenUsage: StateFlow<Boolean> = hot(settingsManager.detailedTokenUsage, false)
     val toolCallDisplayMode: StateFlow<String> = hot(settingsManager.toolCallDisplayMode, ToolCallDisplayModes.DEFAULT)
     val thinkingSegmentDisplayMode: StateFlow<String> = hot(
         settingsManager.thinkingSegmentDisplayMode,
@@ -684,10 +684,10 @@ class SettingsRepository(
     fun setDynamicColor(enabled: Boolean) = scope.launch { settingsManager.saveDynamicColor(enabled) }
     fun setBlurEffectsEnabled(enabled: Boolean) = scope.launch { settingsManager.saveBlurEffectsEnabled(enabled) }
     fun setReduceMotion(enabled: Boolean) = scope.launch { settingsManager.saveReduceMotion(enabled) }
-    fun setStickToBottom(enabled: Boolean) =
-        scope.launch { settingsManager.saveStickToBottom(enabled) }
+    fun setStickToBottom(enabled: Boolean) = scope.launch { settingsManager.saveStickToBottom(enabled) }
     fun setParseInlineDollarMath(enabled: Boolean) =
         scope.launch { settingsManager.saveParseInlineDollarMath(enabled) }
+    fun setAutoWrapCodeBlocks(enabled: Boolean) = scope.launch { settingsManager.saveAutoWrapCodeBlocks(enabled) }
     fun setHapticsEnabled(enabled: Boolean) = scope.launch { settingsManager.saveHapticsEnabled(enabled) }
     fun setDetailedTokenUsage(enabled: Boolean) =
         scope.launch { settingsManager.saveDetailedTokenUsage(enabled) }

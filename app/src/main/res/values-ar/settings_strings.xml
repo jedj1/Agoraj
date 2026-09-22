@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">تمويه أعلى قائمة الدردشة أسفل شريط الأدوات. عطّله لتوفير الأداء.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">تقليل الحركة</string>
     <string name="reduce_motion_desc">يقلّل الحركة المستمرة والانتقالات المكانية الكبيرة مع الإبقاء على التلاشي والإيماءات المباشرة وملاحظات الحالة المفيدة.</string>
 

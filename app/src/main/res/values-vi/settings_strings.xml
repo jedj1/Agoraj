@@ -425,6 +425,8 @@
     <string name="blur_effects_desc">Làm mờ phần đầu của danh sách trò chuyện dưới thanh công cụ. Tắt đi để tiết kiệm hiệu năng.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">Giảm chuyển động</string>
     <string name="reduce_motion_desc">Giảm chuyển động liên tục và dịch chuyển không gian lớn, đồng thời giữ hiệu ứng mờ dần, cử chỉ trực tiếp và phản hồi trạng thái hữu ích.</string>
     <string name="interaction_feedback">Phản hồi tương tác</string>

@@ -120,6 +120,7 @@ internal fun MessageItem(
     autoExpandActiveGroup: Boolean = true,
 
     parseInlineDollarMath: Boolean = false,
+    autoWrapCodeBlocks: Boolean = true,
     groupedSegmentAutoExpansionController: GroupedSegmentAutoExpansionController =
         remember { GroupedSegmentAutoExpansionController() },
     onStartEdit: () -> Unit = {},
@@ -290,6 +291,7 @@ internal fun MessageItem(
         message.markdownImages,
         onMediaClick,
         message.preparedMarkdown,
+        autoWrapCodeBlocks,
     )
     val markdownRenderContext = markdownAssets.renderContext
     val thoughtMarkdownRenderContext = markdownAssets.thoughtRenderContext

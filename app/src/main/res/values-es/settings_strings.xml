@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">Desenfoca la parte superior de la lista de chat bajo la barra. Desactívalo para ahorrar rendimiento.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">Reducir movimiento</string>
     <string name="reduce_motion_desc">Reduce el movimiento continuo y los desplazamientos espaciales amplios, y conserva los fundidos, los gestos directos y la información de estado útil.</string>
 

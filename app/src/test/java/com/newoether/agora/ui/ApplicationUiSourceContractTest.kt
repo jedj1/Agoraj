@@ -412,8 +412,8 @@ internal class ApplicationUiSourceContractTest : UiSourceContractFixture() {
         assertTrue(groupIndices.zipWithNext().all { (current, next) -> current < next })
         assertFalse(appearance.contains("R.string.appearance_interface"))
         assertEquals(4, Regex("SettingsGroup\\(").findAll(appearance).count())
-        assertEquals(15, Regex("SettingsItem\\(").findAll(appearance).count())
-        assertEquals(15, Regex("leadingContent\\s*=").findAll(appearance).count())
+        assertEquals(16, Regex("SettingsItem\\(").findAll(appearance).count())
+        assertEquals(16, Regex("leadingContent\\s*=").findAll(appearance).count())
         listOf(
             "Palette",
             "Style",

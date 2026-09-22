@@ -44,6 +44,7 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.newoether.agora.R
@@ -126,6 +127,7 @@ internal fun SearchHighlightedMarkdownCode(
     spec: SearchHighlightSpec?,
     highlightColor: Color,
     activeHighlightColor: Color,
+    autoWrap: Boolean = true,
 ) {
     val streamingFadeSpec = LocalStreamingGlyphFadeSpec.current
     val nodeFade = remember(streamingFadeSpec, model.content, model.node) {
@@ -171,6 +173,7 @@ internal fun SearchHighlightedMarkdownCode(
             highlightColor = highlightColor,
             activeHighlightColor = activeHighlightColor,
             nodeFade = nodeFade,
+            autoWrap = autoWrap,
         )
     }
     if (fenced) {
@@ -190,6 +193,7 @@ private fun SearchHighlightedMarkdownCodeText(
     highlightColor: Color,
     activeHighlightColor: Color,
     nodeFade: StreamingGlyphNodeFade?,
+    autoWrap: Boolean,
 ) {
     val displayMatches = if (spec == null) {
         emptyList()
@@ -264,9 +268,9 @@ private fun SearchHighlightedMarkdownCodeText(
             ChatCodeBlockHeader(language = language, code = code)
             MarkdownBasicText(
                 text = renderedText,
-                style = style,
+                style = if (autoWrap) style.copy(lineBreak = LineBreak.Simple) else style,
                 modifier = Modifier
-                    .horizontalScroll(horizontalScrollState)
+                    .then(if (autoWrap) Modifier else Modifier.horizontalScroll(horizontalScrollState))
                     .padding(LocalMarkdownPadding.current.codeBlock)
                     .onGloballyPositioned { coordinates = it },
                 onTextLayout = { layoutResult = it },

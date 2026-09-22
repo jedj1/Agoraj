@@ -143,6 +143,7 @@ internal object PortableSettingsArchive {
         put("reduceMotion", JsonPrimitive(sm.reduceMotion.first()))
         put("stickToBottom", JsonPrimitive(sm.stickToBottom.first()))
         put("parseInlineDollarMath", JsonPrimitive(sm.parseInlineDollarMath.first()))
+        put("autoWrapCodeBlocks", JsonPrimitive(sm.autoWrapCodeBlocks.first()))
         put("hapticsEnabled", JsonPrimitive(sm.hapticsEnabled.first()))
         put("detailedTokenUsage", JsonPrimitive(sm.detailedTokenUsage.first()))
         put("toolCallDisplayMode", JsonPrimitive(sm.toolCallDisplayMode.first()))
@@ -472,6 +473,7 @@ internal object PortableSettingsArchive {
         obj.boolean("reduceMotion")?.let { sm.saveReduceMotion(it) }
         obj.boolean("stickToBottom")?.let { sm.saveStickToBottom(it) }
         obj.boolean("parseInlineDollarMath")?.let { sm.saveParseInlineDollarMath(it) }
+        obj.boolean("autoWrapCodeBlocks")?.let { sm.saveAutoWrapCodeBlocks(it) }
         obj.boolean("hapticsEnabled")?.let { sm.saveHapticsEnabled(it) }
         obj.boolean("detailedTokenUsage")?.let { sm.saveDetailedTokenUsage(it) }
         obj.string("toolCallDisplayMode")?.let { sm.saveToolCallDisplayMode(it) }

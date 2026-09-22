@@ -66,6 +66,7 @@ internal fun RemoteConversation(
     val amoled by settings.amoledEnabled.collectAsState(initial = false)
     val inlineMath by settings.parseInlineDollarMath.collectAsState(initial = false)
     val stickToBottom by settings.stickToBottom.collectAsState(initial = true)
+    val autoWrapCodeBlocks by settings.autoWrapCodeBlocks.collectAsState(initial = true)
     val toolCallDisplayMode by settings.toolCallDisplayMode.collectAsState()
     val thinkingSegmentDisplayMode by settings.thinkingSegmentDisplayMode.collectAsState()
     val autoExpandActiveGroup by settings.autoExpandActiveGroup.collectAsState()
@@ -263,6 +264,7 @@ internal fun RemoteConversation(
                 MessageList(messages = StableMessageList(renderMessages.value), allMessages = StableMessageList(messages),
                     authoritativeMessages = StableMessageList(messages), conversationId = owner,
                     state = scroll.listState, overscrollEffect = historyOverscroll, onMediaClick = onMediaClick, messageActionsEnabled = false, readOnlyActions = true, parseInlineDollarMath = inlineMath,
+                    autoWrapCodeBlocks = autoWrapCodeBlocks,
                     isLoading = generationVisible, isSwitching = switching, streamingMessage = streaming,
                     searchQuery = if (interaction.searchActive) interaction.searchQuery else "",
                     activeSearchMatch = searchMatch,

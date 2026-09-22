@@ -97,8 +97,7 @@ fun ChatApp(
     val compactModel by viewModel.settings.contextCompactModel.collectAsState()
     val compactPrompt by viewModel.settings.contextCompactPrompt.collectAsState()
     val compactRetainCount by viewModel.settings.contextCompactRetainCount.collectAsState()
-    val compactThresholdPercent by
-        viewModel.settings.contextCompactThresholdPercent.collectAsState()
+    val compactThresholdPercent by viewModel.settings.contextCompactThresholdPercent.collectAsState()
     val manualCompactDialogVisible = rememberSaveable { mutableStateOf(false) }
     val dialogState = rememberChatAppDialogState(manualCompactDialogVisible)
     val queuedSends by viewModel.queuedSends.collectAsState()
@@ -110,8 +109,7 @@ fun ChatApp(
     val currentLoop by viewModel.currentLoop.collectAsState()
     val runningLoopIds by viewModel.runningLoopConversationIds.collectAsState()
     val generationSnapshot by viewModel.generationSnapshot.collectAsState()
-    val selectedConversationGenerationSnapshot by
-        viewModel.selectedConversationGenerationSnapshot.collectAsState()
+    val selectedConversationGenerationSnapshot by viewModel.selectedConversationGenerationSnapshot.collectAsState()
     val selectedModel by viewModel.currentActiveModel.collectAsState()
     val enabledModels by viewModel.settings.enabledModels.collectAsState()
     val developerOptionsEnabled by viewModel.settings.developerOptionsEnabled.collectAsState()
@@ -146,6 +144,7 @@ fun ChatApp(
     val autoExpandActiveGroup by viewModel.settings.autoExpandActiveGroup.collectAsState()
 
     val parseInlineDollarMath by viewModel.settings.parseInlineDollarMath.collectAsState()
+    val autoWrapCodeBlocks by viewModel.settings.autoWrapCodeBlocks.collectAsState()
     val conversationControls = effectiveConversationControls(
         viewModel = viewModel,
         isNewChatMode = isNewChatMode,
@@ -536,6 +535,7 @@ fun ChatApp(
                                 thinkingSegmentDisplayMode = thinkingSegmentDisplayMode,
                                 autoExpandActiveGroup = autoExpandActiveGroup,
                                 parseInlineDollarMath = parseInlineDollarMath,
+                                autoWrapCodeBlocks = autoWrapCodeBlocks,
                                 contextRetainedMessageIds = contextProjection.retainedMessageIds.orEmpty(),
                                 modelAliases = StableModelAliases(modelAliases, modelProviderNames),
                                 customProviders = customProviders,

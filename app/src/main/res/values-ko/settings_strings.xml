@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">도구 모음 아래 채팅 목록 상단을 흐리게 처리합니다. 성능을 절약하려면 끄세요.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">모션 줄이기</string>
     <string name="reduce_motion_desc">지속적인 움직임과 큰 공간 이동을 줄이면서 페이드, 직접 제스처, 유용한 상태 피드백은 유지합니다.</string>
 

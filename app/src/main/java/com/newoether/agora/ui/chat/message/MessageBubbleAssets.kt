@@ -157,6 +157,7 @@ internal fun rememberChatMarkdownAssets(
     inlineImages: Map<String, com.newoether.agora.model.MarkdownImage> = emptyMap(),
     onMediaClick: (List<String>, Int) -> Unit = { _, _ -> },
     preparedMarkdown: Map<String, com.mikepenz.markdown.model.State.Success> = emptyMap(),
+    autoWrapCodeBlocks: Boolean = true,
 ): ChatMarkdownAssets {
     val linkColor = MaterialTheme.colorScheme.primary
     val linkTextStyles = remember(linkColor) { chatLinkTextStyles(linkColor) }
@@ -224,6 +225,7 @@ internal fun rememberChatMarkdownAssets(
     val customMarkdownComponents = remember(
         searchHighlightColor,
         activeSearchHighlightColor,
+        autoWrapCodeBlocks,
     ) {
         lateinit var components: MarkdownComponents
         components = markdownComponents(
@@ -340,6 +342,7 @@ internal fun rememberChatMarkdownAssets(
                     spec = LocalSearchHighlightSpec.current,
                     highlightColor = searchHighlightColor,
                     activeHighlightColor = activeSearchHighlightColor,
+                    autoWrap = autoWrapCodeBlocks,
                 )
             },
             codeBlock = { model ->
@@ -349,6 +352,7 @@ internal fun rememberChatMarkdownAssets(
                     spec = LocalSearchHighlightSpec.current,
                     highlightColor = searchHighlightColor,
                     activeHighlightColor = activeSearchHighlightColor,
+                    autoWrap = autoWrapCodeBlocks,
                 )
             },
             table = { model ->

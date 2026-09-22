@@ -430,6 +430,8 @@
     <string name="blur_effects_desc">Размывать верхнюю часть списка чата под панелью инструментов. Отключите, чтобы сэкономить производительность.</string>
     <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
     <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
+    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
+    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
     <string name="reduce_motion">Уменьшить движение</string>
     <string name="reduce_motion_desc">Уменьшает непрерывное движение и крупные пространственные перемещения, сохраняя переходы прозрачности, прямые жесты и полезную обратную связь о состоянии.</string>
 

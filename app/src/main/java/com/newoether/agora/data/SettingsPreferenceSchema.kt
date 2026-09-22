@@ -115,6 +115,7 @@ internal val BLUR_EFFECTS_ENABLED = booleanPreferencesKey("blur_effects_enabled"
 internal val REDUCE_MOTION = booleanPreferencesKey("reduce_motion")
 internal val STICK_TO_BOTTOM = booleanPreferencesKey("stick_to_bottom")
 internal val PARSE_INLINE_DOLLAR_MATH = booleanPreferencesKey("parse_inline_dollar_math")
+internal val AUTO_WRAP_CODE_BLOCKS = booleanPreferencesKey("auto_wrap_code_blocks")
 internal val HAPTICS_ENABLED = booleanPreferencesKey("haptics_enabled")
 internal val DETAILED_TOKEN_USAGE = booleanPreferencesKey("detailed_token_usage")
 internal val TOOL_CALL_DISPLAY_MODE = stringPreferencesKey("tool_call_display_mode")
