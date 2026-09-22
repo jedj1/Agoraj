@@ -3,6 +3,7 @@ package com.newoether.agora.viewmodel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import com.newoether.agora.util.MainThreadProbe
 import java.util.concurrent.atomic.AtomicLong
 
 enum class SwitchingRequestKind {
@@ -97,6 +98,9 @@ internal class SwitchingCoordinator {
         )
         val supersededFailure = this.onFailure
         this.onFailure = onFailure
+        MainThreadProbe.beginSession(
+            "#${next.id} $kind ${next.conversationId?.take(8) ?: "-"}",
+        )
         _request.value = next
         _isSwitching.value = true
         supersededFailure?.invoke()
@@ -143,6 +147,7 @@ internal class SwitchingCoordinator {
         onFailure = null
         _request.value = null
         _isSwitching.value = false
+        MainThreadProbe.endSession()
         if (!successful) failed?.invoke()
         return true
     }
