@@ -1,4 +1,4 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
     <string name="app_name">Agora</string>
     <string name="agora_responded">Agora hat geantwortet</string>
 
@@ -50,7 +50,7 @@
     <string name="tool_shell_listing">Verfügbare Shells werden aufgelistet</string>
     <string name="tool_shell_list_done">Shell-Liste abgeschlossen</string>
     <string name="tool_shell_list_count">%1$d Shells aufgelistet</string>
-    <string name="tool_execute_shell">Shell</string>
+    <string name="tool_execute_shell">Terminal</string>
     <string name="tool_shell_executing">Ausgeführt: %1$s</string>
     <string name="tool_shell_done">Shell-Befehl abgeschlossen</string>
     <string name="tool_shell_failed">Shell-Befehl fehlgeschlagen</string>
@@ -79,44 +79,44 @@
     <string name="tool_done">Fertig</string>
     <string name="tool_context">Werkzeug</string>
     <!-- New tool display names (P0) -->
-    <string name="tool_list_conversations">List Conversations</string>
-    <string name="tool_read_conversation">Read Conversation</string>
-    <string name="tool_file_read">Read File</string>
-    <string name="tool_file_write">Write File</string>
-    <string name="tool_file_edit">Edit File</string>
-    <string name="tool_file_glob">Find Files</string>
-    <string name="tool_file_grep">Search Files</string>
+    <string name="tool_list_conversations">Unterhaltungen auflisten</string>
+    <string name="tool_read_conversation">Unterhaltung lesen</string>
+    <string name="tool_file_read">Datei lesen</string>
+    <string name="tool_file_write">Datei schreiben</string>
+    <string name="tool_file_edit">Datei bearbeiten</string>
+    <string name="tool_file_glob">Dateien finden</string>
+    <string name="tool_file_grep">Dateien durchsuchen</string>
     <!-- Tool in-progress states (doing) -->
-    <string name="tool_listing_conversations">Listing conversations…</string>
-    <string name="tool_reading_conversation">Reading conversation…</string>
-    <string name="tool_reading_file">Reading %1$s…</string>
-    <string name="tool_writing_file">Writing %1$s…</string>
-    <string name="tool_editing_file">Editing %1$s…</string>
-    <string name="tool_finding_files">Finding %1$s…</string>
-    <string name="tool_searching_file">Searching %1$s…</string>
-    <string name="tool_executing_shell">Executing: %1$s…</string>
-    <string name="tool_reading_memory">Reading %1$s…</string>
-    <string name="tool_saving_memory">Saving %1$s…</string>
-    <string name="tool_updating_memory">Updating %1$s…</string>
-    <string name="tool_removing_memory">Removing %1$s…</string>
-    <string name="tool_looking_up_memories">Looking up memories…</string>
-    <string name="tool_updating_active">Updating active memory…</string>
-    <string name="tool_listing_shells">Listing shells…</string>
-    <string name="tool_searching_for">Searching for \'%1$s\'…</string>
+    <string name="tool_listing_conversations">Unterhaltungen werden aufgelistet…</string>
+    <string name="tool_reading_conversation">Unterhaltung wird gelesen…</string>
+    <string name="tool_reading_file">%1$s wird gelesen…</string>
+    <string name="tool_writing_file">%1$s wird geschrieben…</string>
+    <string name="tool_editing_file">%1$s wird bearbeitet…</string>
+    <string name="tool_finding_files">%1$s wird gesucht…</string>
+    <string name="tool_searching_file">%1$s wird durchsucht…</string>
+    <string name="tool_executing_shell">Ausführen: %1$s…</string>
+    <string name="tool_reading_memory">%1$s wird gelesen…</string>
+    <string name="tool_saving_memory">%1$s wird gespeichert…</string>
+    <string name="tool_updating_memory">%1$s wird aktualisiert…</string>
+    <string name="tool_removing_memory">%1$s wird entfernt…</string>
+    <string name="tool_looking_up_memories">Speicher wird durchsucht…</string>
+    <string name="tool_updating_active">Aktiver Speicher wird aktualisiert…</string>
+    <string name="tool_listing_shells">Terminals werden aufgelistet…</string>
+    <string name="tool_searching_for">Suche nach „%1$s“…</string>
     <!-- Tool done states (P0 + P1) -->
-    <string name="tool_listed_conversations">Listed %1$d conversations</string>
-    <string name="tool_listed_no_conversations">No conversations found</string>
-    <string name="tool_read_conversation_done">Read conversation: %1$s</string>
-    <string name="tool_read_file_done">Read %1$s</string>
-    <string name="tool_wrote_file">Wrote %1$s</string>
-    <string name="tool_edited_file">Edited %1$s</string>
-    <string name="tool_found_files">Found %1$d files</string>
-    <string name="tool_found_no_files">No files matched</string>
-    <string name="tool_searched_file">Found %1$d matches</string>
-    <string name="tool_executed_shell">Executed: %1$s (%2$d bytes)</string>
-    <string name="tool_executed_no_output">Executed: %1$s (no output)</string>
-    <string name="tool_read_file_failed">Read file failed</string>
-    <string name="crash_log_label">Crash Log</string>
+    <string name="tool_listed_conversations">%1$d Unterhaltungen aufgelistet</string>
+    <string name="tool_listed_no_conversations">Keine Unterhaltungen gefunden</string>
+    <string name="tool_read_conversation_done">Unterhaltung gelesen: %1$s</string>
+    <string name="tool_read_file_done">%1$s gelesen</string>
+    <string name="tool_wrote_file">%1$s geschrieben</string>
+    <string name="tool_edited_file">Bearbeitet %1$s</string>
+    <string name="tool_found_files">%1$d Dateien gefunden</string>
+    <string name="tool_found_no_files">Keine passenden Dateien</string>
+    <string name="tool_searched_file">%1$d Treffer gefunden</string>
+    <string name="tool_executed_shell">Ausgeführt: %1$s (%2$d Bytes)</string>
+    <string name="tool_executed_no_output">Ausgeführt: %1$s (keine Ausgabe)</string>
+    <string name="tool_read_file_failed">Datei konnte nicht gelesen werden</string>
+    <string name="crash_log_label">Absturzprotokoll</string>
     <string name="message_info">Nachrichteninfo</string>
     <string name="time_with_label">Zeit: %1$s</string>
     <string name="model_with_label">Modell: %1$s</string>
@@ -184,7 +184,7 @@
     <string name="manual_search_method_desc">Wie die Suchleiste im Menü Ergebnisse findet</string>
     <string name="search_method_keyword">Stichwort</string>
     <string name="search_method_rag">Semantisch (RAG)</string>
-    <string name="embedding_title">Embedding</string>
+    <string name="embedding_title">Einbettung</string>
     <string name="embedding_model_label">Modell</string>
     <string name="embedding_base_url_label">Basis-URL</string>
     <string name="embedding_provider_label">Anbieter</string>
@@ -202,7 +202,7 @@
     <string name="import_model">Modell importieren (.gguf)</string>
     <string name="importing_model">Importieren...</string>
     <string name="no_embedding_models">Keine Embedding-Modelle konfiguriert</string>
-    <string name="embedding_type_remote">Remote</string>
+    <string name="embedding_type_remote">Entfernt</string>
     <string name="embedding_type_local">Lokal</string>
     <string name="cached">Zwischengespeichert</string>
     <string name="not_cached">Nicht zwischengespeichert</string>
@@ -326,7 +326,7 @@
     <string name="settings_about">Über</string>
     <string name="settings_about_desc">App-Infos, Links und App bewerten</string>
     <string name="about_title">Über</string>
-    <string name="about_info">Info</string>
+    <string name="about_info">Infos</string>
     <string name="about_links">Links</string>
     <string name="about_developer">Entwickler</string>
     <string name="about_developer_name">Newo Ether · Einzelentwickler</string>
@@ -589,8 +589,8 @@
     <string name="queue_clear_all">Alle löschen</string>
     <string name="tool_background_job_running">Hintergrundauftrag %1$s wird ausgeführt</string>
     <string name="tool_execution_stopped">Werkzeugausführung gestoppt</string>
-    <string name="tool_exit_code">Exit %1$d</string>
-    <string name="tool_exit">Exit</string>
+    <string name="tool_exit_code">Exit-Code %1$d</string>
+    <string name="tool_exit">Beenden</string>
     <string name="tool_shell_returned_code">Befehl gab %1$d zurück</string>
     <string name="tool_shell_detail_executed">Ausgeführt</string>
     <string name="tool_shell_detail_returned_code">Rückgabewert %1$d</string>
@@ -606,7 +606,7 @@
     <string name="tool_waited_shell_job">Auf Shell-Auftrag %1$s gewartet</string>
     <string name="tool_shell_executed_successfully">Befehl erfolgreich ausgeführt</string>
     <string name="tool_shell_execution_completed">Befehlsausführung abgeschlossen</string>
-    <string name="tool_shell_exit_summary">Exit %1$d · %2$d Bytes</string>
+    <string name="tool_shell_exit_summary">Exit-Code %1$d · %2$d Bytes</string>
     <string name="tool_shell_job">Shell-Auftrag abrufen</string>
     <string name="tool_wait_for_job">Auf Shell-Auftrag warten</string>
     <string name="tool_shell_job_count">%1$d Shell-Aufträge aufgelistet</string>
@@ -739,9 +739,9 @@
     <string name="generation_error_connection_reset">Verbindung zurückgesetzt.</string>
     <string name="generation_error_unknown_host">Host konnte nicht gefunden werden.</string>
     <string name="generation_error_tls_failure">Sichere Verbindung fehlgeschlagen.</string>
-    <string name="settings_skills">Skills</string>
+    <string name="settings_skills">Fähigkeiten</string>
     <string name="settings_skills_desc">Wiederverwendbare Anweisungsdateien, die das Modell bei Bedarf lesen kann.</string>
-    <string name="skills_title">Skills</string>
+    <string name="skills_title">Fähigkeiten</string>
     <string name="skills_access">Skill-Zugriff erlauben</string>
     <string name="skills_access_desc">Skill-Katalog und Skill-Werkzeuge in neue Generierungen aufnehmen.</string>
     <string name="skills_saved_title">Gespeicherte Skills</string>

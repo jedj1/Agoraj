@@ -1,4 +1,4 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
     <!-- Settings - Main -->
     <string name="settings_title">Cài đặt</string>
     <string name="settings_provider">Nhà cung cấp</string>
@@ -233,7 +233,7 @@
     <string name="web_search_searxng_url_hint">https://searx.be</string>
 
     <!-- Settings - Shell Page -->
-    <string name="shell_title">Shell</string>
+    <string name="shell_title">Terminal</string>
     <string name="shell_desc">Thực thi lệnh shell từ xa</string>
     <string name="shell_enable">Bật công cụ Shell</string>
     <string name="shell_enable_desc">Cho phép mô hình thực thi các lệnh shell qua máy chủ từ xa</string>
@@ -423,10 +423,10 @@
     <string name="visual_effects">Hiệu ứng thị giác</string>
     <string name="blur_effects">Hiệu ứng làm mờ</string>
     <string name="blur_effects_desc">Làm mờ phần đầu của danh sách trò chuyện dưới thanh công cụ. Tắt đi để tiết kiệm hiệu năng.</string>
-    <string name="parse_inline_dollar_math">Parse $…$ as inline math</string>
-    <string name="parse_inline_dollar_math_desc">When disabled, single-dollar expressions such as $ x $ remain ordinary text. Other math delimiters are unchanged.</string>
-    <string name="auto_wrap_code_blocks">Auto Wrap Code Blocks</string>
-    <string name="auto_wrap_code_blocks_desc">Wrap long lines inside code blocks instead of scrolling them horizontally.</string>
+    <string name="parse_inline_dollar_math">Phân tích $…$ thành công thức nội dòng</string>
+    <string name="parse_inline_dollar_math_desc">Khi tắt, biểu thức một dấu $ như $ x $ sẽ là văn bản thường. Các ký tự phân cách công thức khác không đổi.</string>
+    <string name="auto_wrap_code_blocks">Tự xuống dòng trong khối mã</string>
+    <string name="auto_wrap_code_blocks_desc">Dòng dài trong khối mã sẽ xuống dòng thay vì cuộn ngang.</string>
     <string name="reduce_motion">Giảm chuyển động</string>
     <string name="reduce_motion_desc">Giảm chuyển động liên tục và dịch chuyển không gian lớn, đồng thời giữ hiệu ứng mờ dần, cử chỉ trực tiếp và phản hồi trạng thái hữu ích.</string>
     <string name="interaction_feedback">Phản hồi tương tác</string>

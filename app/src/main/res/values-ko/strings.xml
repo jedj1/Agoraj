@@ -1,4 +1,4 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
     <string name="app_name">Agora</string>
     <string name="agora_responded">Agora가 응답했습니다</string>
 
@@ -79,44 +79,44 @@
     <string name="tool_done">완료</string>
     <string name="tool_context">도구</string>
     <!-- New tool display names (P0) -->
-    <string name="tool_list_conversations">List Conversations</string>
-    <string name="tool_read_conversation">Read Conversation</string>
-    <string name="tool_file_read">Read File</string>
-    <string name="tool_file_write">Write File</string>
-    <string name="tool_file_edit">Edit File</string>
-    <string name="tool_file_glob">Find Files</string>
-    <string name="tool_file_grep">Search Files</string>
+    <string name="tool_list_conversations">대화 목록 표시</string>
+    <string name="tool_read_conversation">대화 읽기</string>
+    <string name="tool_file_read">파일 읽기</string>
+    <string name="tool_file_write">파일 쓰기</string>
+    <string name="tool_file_edit">파일 편집</string>
+    <string name="tool_file_glob">파일 찾기</string>
+    <string name="tool_file_grep">파일 내용 검색</string>
     <!-- Tool in-progress states (doing) -->
-    <string name="tool_listing_conversations">Listing conversations…</string>
-    <string name="tool_reading_conversation">Reading conversation…</string>
-    <string name="tool_reading_file">Reading %1$s…</string>
-    <string name="tool_writing_file">Writing %1$s…</string>
-    <string name="tool_editing_file">Editing %1$s…</string>
-    <string name="tool_finding_files">Finding %1$s…</string>
-    <string name="tool_searching_file">Searching %1$s…</string>
-    <string name="tool_executing_shell">Executing: %1$s…</string>
-    <string name="tool_reading_memory">Reading %1$s…</string>
-    <string name="tool_saving_memory">Saving %1$s…</string>
-    <string name="tool_updating_memory">Updating %1$s…</string>
-    <string name="tool_removing_memory">Removing %1$s…</string>
-    <string name="tool_looking_up_memories">Looking up memories…</string>
-    <string name="tool_updating_active">Updating active memory…</string>
-    <string name="tool_listing_shells">Listing shells…</string>
-    <string name="tool_searching_for">Searching for \'%1$s\'…</string>
+    <string name="tool_listing_conversations">대화 나열 중…</string>
+    <string name="tool_reading_conversation">대화 읽는 중…</string>
+    <string name="tool_reading_file">%1$s 읽는 중…</string>
+    <string name="tool_writing_file">%1$s 쓰는 중…</string>
+    <string name="tool_editing_file">%1$s 편집 중…</string>
+    <string name="tool_finding_files">%1$s 찾는 중…</string>
+    <string name="tool_searching_file">%1$s 검색 중…</string>
+    <string name="tool_executing_shell">실행 중: %1$s…</string>
+    <string name="tool_reading_memory">%1$s 읽는 중…</string>
+    <string name="tool_saving_memory">%1$s 저장 중…</string>
+    <string name="tool_updating_memory">%1$s 업데이트 중…</string>
+    <string name="tool_removing_memory">%1$s 삭제 중…</string>
+    <string name="tool_looking_up_memories">메모 검색 중…</string>
+    <string name="tool_updating_active">활성 메모리 업데이트 중…</string>
+    <string name="tool_listing_shells">터미널 목록 중…</string>
+    <string name="tool_searching_for">“%1$s” 검색 중…</string>
     <!-- Tool done states (P0 + P1) -->
-    <string name="tool_listed_conversations">Listed %1$d conversations</string>
-    <string name="tool_listed_no_conversations">No conversations found</string>
-    <string name="tool_read_conversation_done">Read conversation: %1$s</string>
-    <string name="tool_read_file_done">Read %1$s</string>
-    <string name="tool_wrote_file">Wrote %1$s</string>
-    <string name="tool_edited_file">Edited %1$s</string>
-    <string name="tool_found_files">Found %1$d files</string>
-    <string name="tool_found_no_files">No files matched</string>
-    <string name="tool_searched_file">Found %1$d matches</string>
-    <string name="tool_executed_shell">Executed: %1$s (%2$d bytes)</string>
-    <string name="tool_executed_no_output">Executed: %1$s (no output)</string>
-    <string name="tool_read_file_failed">Read file failed</string>
-    <string name="crash_log_label">Crash Log</string>
+    <string name="tool_listed_conversations">대화 %1$d개 나열됨</string>
+    <string name="tool_listed_no_conversations">대화가 없습니다</string>
+    <string name="tool_read_conversation_done">대화 읽음: %1$s</string>
+    <string name="tool_read_file_done">%1$s 읽음</string>
+    <string name="tool_wrote_file">%1$s 쓰기 완료</string>
+    <string name="tool_edited_file">%1$s 편집됨</string>
+    <string name="tool_found_files">파일 %1$d개 찾음</string>
+    <string name="tool_found_no_files">일치하는 파일 없음</string>
+    <string name="tool_searched_file">일치 %1$d개 발견</string>
+    <string name="tool_executed_shell">실행됨: %1$s(%2$d바이트)</string>
+    <string name="tool_executed_no_output">실행됨: %1$s(출력 없음)</string>
+    <string name="tool_read_file_failed">파일 읽기 실패</string>
+    <string name="crash_log_label">충돌 로그</string>
     <string name="message_info">메시지 정보</string>
     <string name="time_with_label">시간: %1$s</string>
     <string name="model_with_label">모델: %1$s</string>

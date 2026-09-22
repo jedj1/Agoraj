@@ -1,4 +1,4 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
     <string name="app_name">Agora</string>
     <string name="agora_responded">Agora a répondu</string>
 
@@ -50,7 +50,7 @@
     <string name="tool_shell_listing">Liste des shells disponibles</string>
     <string name="tool_shell_list_done">Liste des shells terminée</string>
     <string name="tool_shell_list_count">%1$d shells listés</string>
-    <string name="tool_execute_shell">Shell</string>
+    <string name="tool_execute_shell">Terminal</string>
     <string name="tool_shell_executing">Exécuté : %1$s</string>
     <string name="tool_shell_done">Commande shell terminée</string>
     <string name="tool_shell_failed">Échec de la commande shell</string>
@@ -79,44 +79,44 @@
     <string name="tool_done">Terminé</string>
     <string name="tool_context">Outil</string>
     <!-- New tool display names (P0) -->
-    <string name="tool_list_conversations">List Conversations</string>
-    <string name="tool_read_conversation">Read Conversation</string>
-    <string name="tool_file_read">Read File</string>
-    <string name="tool_file_write">Write File</string>
-    <string name="tool_file_edit">Edit File</string>
-    <string name="tool_file_glob">Find Files</string>
-    <string name="tool_file_grep">Search Files</string>
+    <string name="tool_list_conversations">Lister les conversations</string>
+    <string name="tool_read_conversation">Lire la conversation</string>
+    <string name="tool_file_read">Lire le fichier</string>
+    <string name="tool_file_write">Écrire le fichier</string>
+    <string name="tool_file_edit">Modifier le fichier</string>
+    <string name="tool_file_glob">Localiser des fichiers</string>
+    <string name="tool_file_grep">Chercher dans les fichiers</string>
     <!-- Tool in-progress states (doing) -->
-    <string name="tool_listing_conversations">Listing conversations…</string>
-    <string name="tool_reading_conversation">Reading conversation…</string>
-    <string name="tool_reading_file">Reading %1$s…</string>
-    <string name="tool_writing_file">Writing %1$s…</string>
-    <string name="tool_editing_file">Editing %1$s…</string>
-    <string name="tool_finding_files">Finding %1$s…</string>
-    <string name="tool_searching_file">Searching %1$s…</string>
-    <string name="tool_executing_shell">Executing: %1$s…</string>
-    <string name="tool_reading_memory">Reading %1$s…</string>
-    <string name="tool_saving_memory">Saving %1$s…</string>
-    <string name="tool_updating_memory">Updating %1$s…</string>
-    <string name="tool_removing_memory">Removing %1$s…</string>
-    <string name="tool_looking_up_memories">Looking up memories…</string>
-    <string name="tool_updating_active">Updating active memory…</string>
-    <string name="tool_listing_shells">Listing shells…</string>
-    <string name="tool_searching_for">Searching for \'%1$s\'…</string>
+    <string name="tool_listing_conversations">Listage des conversations…</string>
+    <string name="tool_reading_conversation">Lecture de la conversation…</string>
+    <string name="tool_reading_file">Lecture de %1$s…</string>
+    <string name="tool_writing_file">Écriture de %1$s…</string>
+    <string name="tool_editing_file">Modification de %1$s…</string>
+    <string name="tool_finding_files">Recherche de %1$s…</string>
+    <string name="tool_searching_file">Recherche dans %1$s…</string>
+    <string name="tool_executing_shell">Exécution : %1$s…</string>
+    <string name="tool_reading_memory">Lecture de %1$s…</string>
+    <string name="tool_saving_memory">Enregistrement de %1$s…</string>
+    <string name="tool_updating_memory">Mise à jour de %1$s…</string>
+    <string name="tool_removing_memory">Suppression de %1$s…</string>
+    <string name="tool_looking_up_memories">Recherche dans les mémoires…</string>
+    <string name="tool_updating_active">Mise à jour de la mémoire active…</string>
+    <string name="tool_listing_shells">Listage des terminaux…</string>
+    <string name="tool_searching_for">Recherche de « %1$s »…</string>
     <!-- Tool done states (P0 + P1) -->
-    <string name="tool_listed_conversations">Listed %1$d conversations</string>
-    <string name="tool_listed_no_conversations">No conversations found</string>
-    <string name="tool_read_conversation_done">Read conversation: %1$s</string>
-    <string name="tool_read_file_done">Read %1$s</string>
-    <string name="tool_wrote_file">Wrote %1$s</string>
-    <string name="tool_edited_file">Edited %1$s</string>
-    <string name="tool_found_files">Found %1$d files</string>
-    <string name="tool_found_no_files">No files matched</string>
-    <string name="tool_searched_file">Found %1$d matches</string>
-    <string name="tool_executed_shell">Executed: %1$s (%2$d bytes)</string>
-    <string name="tool_executed_no_output">Executed: %1$s (no output)</string>
-    <string name="tool_read_file_failed">Read file failed</string>
-    <string name="crash_log_label">Crash Log</string>
+    <string name="tool_listed_conversations">%1$d conversations listées</string>
+    <string name="tool_listed_no_conversations">Aucune conversation trouvée</string>
+    <string name="tool_read_conversation_done">Conversation lue : %1$s</string>
+    <string name="tool_read_file_done">%1$s lu</string>
+    <string name="tool_wrote_file">%1$s écrit</string>
+    <string name="tool_edited_file">%1$s modifié</string>
+    <string name="tool_found_files">%1$d fichiers trouvés</string>
+    <string name="tool_found_no_files">Aucun fichier correspondant</string>
+    <string name="tool_searched_file">%1$d correspondances trouvées</string>
+    <string name="tool_executed_shell">Exécuté : %1$s (%2$d octets)</string>
+    <string name="tool_executed_no_output">Exécuté : %1$s (aucune sortie)</string>
+    <string name="tool_read_file_failed">Échec de la lecture du fichier</string>
+    <string name="crash_log_label">Journal de plantage</string>
     <string name="message_info">Informations sur le message</string>
     <string name="time_with_label">Heure : %1$s</string>
     <string name="model_with_label">Modèle : %1$s</string>
@@ -184,7 +184,7 @@
     <string name="manual_search_method_desc">Comment la barre de recherche du menu trouve les résultats</string>
     <string name="search_method_keyword">Mot-clé</string>
     <string name="search_method_rag">Sémantique (RAG)</string>
-    <string name="embedding_title">Embedding</string>
+    <string name="embedding_title">Embeddings</string>
     <string name="embedding_model_label">Modèle</string>
     <string name="embedding_base_url_label">URL de base</string>
     <string name="embedding_provider_label">Fournisseur</string>

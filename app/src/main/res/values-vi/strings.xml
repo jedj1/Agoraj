@@ -1,4 +1,4 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
     <string name="app_name">Agora</string>
     <string name="agora_responded">Agora đã phản hồi</string>
 
@@ -50,7 +50,7 @@
     <string name="tool_shell_listing">Đang liệt kê các shell khả dụng</string>
     <string name="tool_shell_list_done">Hoàn thành danh sách shell</string>
     <string name="tool_shell_list_count">Đã liệt kê %1$d shell</string>
-    <string name="tool_execute_shell">Shell</string>
+    <string name="tool_execute_shell">Terminal</string>
     <string name="tool_shell_executing">Đã thực thi: %1$s</string>
     <string name="tool_shell_done">Lệnh shell đã hoàn thành</string>
     <string name="tool_shell_failed">Lệnh shell thất bại</string>
@@ -108,7 +108,7 @@
 
     <!-- Tool done states (P0 + P1) -->
     <string name="tool_listed_conversations">Đã liệt kê %1$d cuộc trò chuyện</string>
-    <string name="tool_listed_no_conversations">Không tìm thấy cuộc trò chuyện nào</string>
+    <string name="tool_listed_no_conversations">Không tìm thấy hội thoại</string>
     <string name="tool_read_conversation_done">Đã đọc cuộc trò chuyện: %1$s</string>
     <string name="tool_read_file_done">Đã đọc %1$s</string>
     <string name="tool_wrote_file">Đã ghi %1$s</string>
