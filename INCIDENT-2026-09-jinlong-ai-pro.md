@@ -117,7 +117,7 @@ The derivative also continues to send requests to `https://newoether.space/api/r
 
 ## 10. Actions taken
 
-1. License changed to GPL-3.0 from v2.2.0; the MIT text is retained as `LICENSE-MIT` for versions v2.1.0 and earlier.
+1. License changed to GPL-3.0 from v2.2.0; the MIT text for versions v2.1.0 and earlier remains available in the [historical release](https://github.com/newo-ether/Agora/blob/9fc92fc3518c880158111ae1e9534ed8ffd09c6d/LICENSE).
 2. This report published, with a short notice at the top of the README.
 3. `newoether.space` submission endpoints hardened against submissions from unauthorized builds.
 4. Evidence archived and hashes recorded (section 2 and the appendix) so that the analysis can be checked independently.
