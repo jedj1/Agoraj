@@ -398,6 +398,9 @@
     <string name="about_contribute">參與貢獻</string>
     <string name="about_privacy_policy">隱私政策</string>
     <string name="about_source_code">原始碼</string>
+    <string name="about_license">授權條款</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">v2.1.0 及更早版本以 MIT 授權條款發布。</string>
     <string name="about_version">版本</string>
     <string name="about_rating">評價應用程式</string>
     <string name="about_rating_desc">這個專案由一個人獨立開發。真誠地感謝您的回饋。</string>

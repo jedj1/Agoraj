@@ -336,6 +336,9 @@
     <string name="about_contribute">貢献する</string>
     <string name="about_privacy_policy">プライバシーポリシー</string>
     <string name="about_source_code">ソースコード</string>
+    <string name="about_license">ライセンス</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">v2.1.0 までのバージョンは MIT ライセンスで公開されていました。</string>
     <string name="about_version">バージョン</string>
     <string name="about_rating">アプリを評価</string>
     <string name="about_rating_desc">このプロジェクトは一人で開発しています。フィードバックを心より感謝します。</string>

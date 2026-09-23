@@ -336,6 +336,9 @@
     <string name="about_contribute">Внести вклад</string>
     <string name="about_privacy_policy">Политика конфиденциальности</string>
     <string name="about_source_code">Исходный код</string>
+    <string name="about_license">Лицензия</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">Версии до v2.1.0 выпускались по лицензии MIT.</string>
     <string name="about_version">Версия</string>
     <string name="about_rating">Оценить приложение</string>
     <string name="about_rating_desc">Этот проект разработан одним человеком. Я искренне ценю ваши отзывы.</string>

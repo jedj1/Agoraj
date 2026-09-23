@@ -339,6 +339,9 @@
     <string name="about_contribute">Đóng góp</string>
     <string name="about_privacy_policy">Chính sách quyền riêng tư</string>
     <string name="about_source_code">Mã nguồn</string>
+    <string name="about_license">Giấy phép</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">Các phiên bản đến v2.1.0 được phát hành theo giấy phép MIT.</string>
     <string name="about_version">Phiên bản</string>
     <string name="about_rating">Đánh giá ứng dụng</string>
     <string name="about_rating_desc">Dự án này được phát triển bởi một người. Tôi rất trân trọng phản hồi của bạn.</string>

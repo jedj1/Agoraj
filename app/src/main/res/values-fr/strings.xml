@@ -336,6 +336,9 @@
     <string name="about_contribute">Contribuer</string>
     <string name="about_privacy_policy">Politique de confidentialité</string>
     <string name="about_source_code">Code source</string>
+    <string name="about_license">Licence</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">Les versions jusqu\'à la v2.1.0 ont été publiées sous licence MIT.</string>
     <string name="about_version">Version</string>
     <string name="about_rating">Noter l\'application</string>
     <string name="about_rating_desc">Ce projet a été développé par une seule personne. J\'apprécie vraiment vos retours.</string>

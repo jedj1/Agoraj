@@ -407,6 +407,9 @@
     <string name="about_contribute">参与贡献</string>
     <string name="about_privacy_policy">隐私政策</string>
     <string name="about_source_code">源代码</string>
+    <string name="about_license">许可证</string>
+    <string name="about_license_desc">GNU GPL-3.0</string>
+    <string name="about_license_history">v2.1.0 及更早版本以 MIT 许可证发布。</string>
     <string name="about_version">版本</string>
     <string name="about_rating">评价应用</string>
     <string name="about_rating_desc">这个项目由一个人独立开发。真诚地感谢您的反馈。</string>
