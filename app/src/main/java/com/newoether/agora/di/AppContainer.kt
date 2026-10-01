@@ -2,6 +2,7 @@ package com.newoether.agora.di
 
 import android.app.Application
 import android.content.Context
+import com.newoether.agora.api.KokoroTtsManager
 import com.newoether.agora.data.MemoryManager
 import com.newoether.agora.data.SkillManager
 import com.newoether.agora.data.SettingsManager
@@ -14,6 +15,7 @@ import com.newoether.agora.data.repository.SettingsRepository
 import com.newoether.agora.data.repository.TaskRepository
 import com.newoether.agora.data.AutoBackupManager
 import com.newoether.agora.api.LocalModelRuntime
+import com.newoether.agora.api.SpeechToTextManager
 import com.newoether.agora.api.local.LocalProvider
 import com.newoether.agora.automation.AutomationScheduler
 import com.newoether.agora.automation.AutomationExecutionGate
@@ -149,6 +151,16 @@ class AppContainer(
             // to offer its decision on the notification shade without any Activity having started.
             ShellConfirmationNotifier.start(appScope, appContext, it)
         }
+    }
+
+    // ── Voice/Audio Singletons ────────────────────────────────
+    
+    val ttsManager: KokoroTtsManager by lazy {
+        KokoroTtsManager(appContext, appScope)
+    }
+
+    val sttManager: SpeechToTextManager by lazy {
+        SpeechToTextManager(appContext)
     }
 
     // ── Generation singletons (process-scoped) ────────────────
@@ -306,6 +318,6 @@ class AppContainer(
             ::startProcessServices, localProvider, providerRegistry,
             taskManager, loopManager, automationToolProvider, conversationExecutionCoordinator,
             automationExecutionGate, conversationStateRegistry, shellConfirmationController,
-            mcpRegistry, mcpToolProvider, taskExecutionEngine,
+            mcpRegistry, mcpToolProvider, taskExecutionEngine, ttsManager, sttManager,
         )
 }
