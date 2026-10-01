@@ -4,6 +4,8 @@ import android.app.Application
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.newoether.agora.api.KokoroTtsManager
+import com.newoether.agora.api.SpeechToTextManager
 import com.newoether.agora.data.AutoBackupManager
 import com.newoether.agora.data.MemoryManager
 import com.newoether.agora.data.SkillManager
@@ -50,6 +52,8 @@ class ChatViewModelFactory(
     private val mcpRegistry: McpRegistry,
     private val mcpToolProvider: McpToolProvider,
     private val taskExecutionEngine: TaskExecutionEngine,
+    private val ttsManager: KokoroTtsManager,
+    private val sttManager: SpeechToTextManager,
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(ChatViewModel::class.java)) {
@@ -60,7 +64,7 @@ class ChatViewModelFactory(
                 conversationSettingsTransfers, startProcessServices, localProvider, providerRegistry,
                 taskManager, loopManager, automationToolProvider, conversationExecutionCoordinator,
                 automationExecutionGate, conversationStateRegistry, shellConfirmationController,
-                mcpRegistry, mcpToolProvider, taskExecutionEngine,
+                mcpRegistry, mcpToolProvider, taskExecutionEngine, ttsManager, sttManager,
             ) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
