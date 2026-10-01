@@ -5,7 +5,9 @@ import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.newoether.agora.R
+import com.newoether.agora.api.KokoroTtsManager
 import com.newoether.agora.api.LlmProvider
+import com.newoether.agora.api.SpeechToTextManager
 import com.newoether.agora.api.local.LocalProvider
 import com.newoether.agora.data.AutoBackupManager
 import com.newoether.agora.data.ConversationSettings
@@ -68,6 +70,9 @@ class ChatViewModel(
     private val mcpRegistry: com.newoether.agora.mcp.McpRegistry,
     private val mcpToolProvider: com.newoether.agora.tool.McpToolProvider,
     private val taskExecutionEngine: com.newoether.agora.automation.TaskExecutionEngine,
+    // Voice/Audio managers
+    val ttsManager: KokoroTtsManager,
+    val sttManager: SpeechToTextManager,
 ) : AndroidViewModel(application) {
 
     val settings: SettingsRepository = settingsRepository
@@ -287,6 +292,9 @@ class ChatViewModel(
         foregroundAutomationBridge.close()
         generationRegistry.detachUiCallbacks(generationCallbackOwner)
         dataControl.destroy()
+        // Release voice/audio resources
+        ttsManager.release()
+        sttManager.release()
     }
 
     /** Nullable on purpose: the provider settings page recomposes one frame after a custom
